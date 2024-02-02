@@ -1,0 +1,15 @@
+Beim Start des Spiels lädt die Datenbank alle verfügbaren Objekte der Klasse Category lässt den Nutzer wählen. Jede Category enthält eine Liste von Fragen, die zu dieser Kategorie gehören.
+
+Der Spieler wird gebeten seinen Namen einzugeben, sollte der Spieler bereits existieren wird er von der Datenbank geholt, ansonsten wird ein neuer erstellt.
+
+Ein neues Spiel wird erstellt und die Startzeit als timestamp gespeichert + am Ende die Endzeit auch als Timestamp
+
+Ein Nutzer wählt nun Kategorien für sein Quiz aus und die Anzahl an Fragen. Das Spiel generiert ein Quiz basierend auf der Auswahl des Nutzers.
+Sollte die Kategorie weniger Fragen als angefordert enthalten, werden alle ausgewählt.
+Anschließend werden die Fragen dann dem Nutzer in einer zufälligen Reihenfolge angezeigt.
+
+Der Nutzer wählt für jede Frage eine Antwort aus. Es wird überprüft, ob die vom Nutzer ausgewählte Antwort korrekt ist, indem es den Boolean-Wert der ausgewählten Antwort überprüft. Für jede richtige Antwort erhält der Nutzer Punkte.
+
+Das Quiz endet, wenn alle Fragen beantwortet wurden und die erreichte Punktzahl wird ausgegeben.
+
+Die gestellten Fragen werden in der Datenbank abgespeichert mit der Information, ob diese richtig beantwortet wurde
